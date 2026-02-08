@@ -228,12 +228,22 @@ const App = () => {
               >
                 View My Work
               </button>
+              
               <button
                 onClick={() => scrollToSection("contact")}
                 className="border border-gray-600 hover:border-gray-400 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-gray-800"
               >
                 Get In Touch
               </button>
+              
+              <a
+                href="https://flowcv.com/resume/sa85s30gf2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gray-600 hover:border-gray-400 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-gray-800"
+              >
+                View Resume
+              </a>
             </div>
           </div>
         </div>

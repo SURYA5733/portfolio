@@ -81,22 +81,22 @@ const App = () => {
       image: "bg-gradient-to-br from-blue-400 to-cyan-400",
     },
     {
-      title: "Stock Management System (PHP)",
-      description:
-        "Web application for managing stock levels with authentication, reducing stockouts by 20% during testing.",
-      tech: ["PHP", "MySQL"],
-      github: "#",
-      live: "#",
-      image: "bg-gradient-to-br from-yellow-400 to-orange-500",
-    },
-    {
       title: "Sudoku Web Application",
       description:
         "Built a responsive Sudoku web app with real-time validation, hints, and undo/redo functionality.",
       tech: ["HTML", "CSS", "JavaScript", "React"],
-      github: "#",
+      github: "#https://github.com/SURYA5733/Sudoku",
       live: "#",
       image: "bg-gradient-to-br from-pink-300 to-purple-400",
+    },
+    {
+      title: "Stock Management System (PHP)",
+      description:
+        "Web application for managing stock levels with authentication, reducing stockouts by 20% during testing.",
+      tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+      github: "#",
+      live: "#",
+      image: "bg-gradient-to-br from-yellow-400 to-orange-500",
     },
 
   ];

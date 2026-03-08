@@ -45,6 +45,15 @@ const App = () => {
       image: "bg-gradient-to-br from-purple-500 to-pink-500",
     },
     {
+      title: "Online Book Store",
+      description:
+        "Developed an online bookstore where users can browse and purchase books with authentication and database integration.",
+      tech: ["MongoDB", "HTML", "CSS", "Bootstrap"],
+      github: "https://github.com/SURYA5733/BOOK-STORE",
+      live: "#",
+      image: "bg-gradient-to-br from-indigo-400 to-purple-500",
+    },
+    {
       title: "Tamil Text to Speech (Deep Learning)",
       description:
         "Built a Tamil Text-to-Speech system using CNN + RNN to generate realistic voice output for accessibility and education tools.",
@@ -104,10 +113,12 @@ const App = () => {
   // ];
 
   const skills = {
-    frontend: ["HTML", "CSS", "JavaScript", "React.js"],
-    backend: ["Node.js", "Express.js", "Java"],
+    programming: ["Java", "Python", "JavaScript"],
+    frontend: ["HTML", "CSS", "React.js"],
+    backend: ["Node.js", "Express.js"],
     database: ["MySQL", "MongoDB"],
-    others: ["Python", "Git", "VS Code"],
+    concepts: ["Object-Oriented Programming", "REST APIs", "Data Structures"],
+    tools: ["Git", "GitHub", "VS Code"],
   };
 
   const certificates = [
@@ -132,6 +143,16 @@ const App = () => {
   ];
 
   const experiences = [
+    {
+      role: "Junior Frontend Developer Intern",
+      company: "HASHh IoT Labs Private Limited",
+      duration: "2024",
+      description: [
+        "Built responsive web pages using HTML, CSS, JavaScript, Bootstrap and React.",
+        "Fixed UI bugs and improved website design and user experience.",
+        "Collaborated with the team to develop and enhance frontend features."
+      ],
+    },
     {
       role: "Artificial Intelligence Intern",
       company: "Skill Vertex",
@@ -214,7 +235,7 @@ const App = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              B.E. Computer Science & Engineering | 2025 Graduate Fresher
+              Java Developer | Full Stack Developer | Computer Science Graduate
             </p>
             <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
               Recent Computer Science graduate with strong skills in web
@@ -228,14 +249,14 @@ const App = () => {
               >
                 View My Work
               </button>
-              
+
               <button
                 onClick={() => scrollToSection("contact")}
                 className="border border-gray-600 hover:border-gray-400 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-gray-800"
               >
                 Get In Touch
               </button>
-              
+
               <a
                 href="https://flowcv.com/resume/sa85s30gf2"
                 target="_blank"
@@ -273,9 +294,10 @@ const App = () => {
 
               <div>
                 <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                  I am a 2025 graduate in Computer Science and Engineering with
-                  hands-on experience in academic projects involving Deep
-                  Learning, IoT, Web Development, and Databases.
+                  I am a Computer Science and Engineering graduate (2025) with strong
+                  skills in Java, Full Stack Web Development, and Object-Oriented
+                  Programming. I enjoy building scalable applications and solving
+                  real-world problems through software development.
                 </p>
                 <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                   I am looking for entry-level opportunities to apply my skills,
@@ -301,12 +323,44 @@ const App = () => {
                     </div>
                   ))} */}
 
-                  <h3 className="text-2xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Technical Skills</h3>
+                  {/* <h3 className="text-2xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Technical Skills</h3>
                   <ul className="grid md:grid-cols-2 gap-3 text-gray-300">
                     <li><b className="text-lg bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Frontend :</b> {skills.frontend.join(", ")}</li>
                     <li><b className="text-lg bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Backend :</b> {skills.backend.join(", ")}</li>
                     <li><b className="text-lg bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Database :</b> {skills.database.join(", ")}</li>
                     <li><b className="text-lg bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Others :</b> {skills.others.join(", ")}</li>
+                  </ul> */}
+
+                  <h3 className="text-2xl font-bold text-center mb-10 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Technical Skills
+                  </h3>
+
+                  <ul className="grid md:grid-cols-2 gap-4 text-gray-300">
+
+                    <li>
+                      <b className="text-lg text-purple-400">Programming Languages:</b> {skills.programming.join(", ")}
+                    </li>
+
+                    <li>
+                      <b className="text-lg text-purple-400">Frontend Technologies:</b> {skills.frontend.join(", ")}
+                    </li>
+
+                    <li>
+                      <b className="text-lg text-purple-400">Backend Technologies:</b> {skills.backend.join(", ")}
+                    </li>
+
+                    <li>
+                      <b className="text-lg text-purple-400">Databases:</b> {skills.database.join(", ")}
+                    </li>
+
+                    <li>
+                      <b className="text-lg text-purple-400">Concepts:</b> {skills.concepts.join(", ")}
+                    </li>
+
+                    <li>
+                      <b className="text-lg text-purple-400">Tools:</b> {skills.tools.join(", ")}
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -477,11 +531,11 @@ const App = () => {
 
               <div className="flex justify-center gap-8 mb-12 flex-wrap">
                 <a
-                  href="mailto:suryasenthilkumar638@gmail.com"
+                  href="mailto:sksurya858@gmail.com"
                   className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors transform hover:scale-110"
                 >
                   <Mail size={24} />
-                  <span>suryasenthilkumar638@gmail.com</span>
+                  <span>sksurya858@gmail.com</span>
                 </a>
                 <a
                   href="tel:+916380866385"

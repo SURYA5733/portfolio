@@ -216,6 +216,24 @@ const App = () => {
             </div>
           </div>
         </div>
+        {isMenuOpen && (
+          <div className="md:hidden border-t border-gray-800">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {["home", "about", "projects", "internship", "certificates", "contact"].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item)}
+                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium capitalize transition-colors ${activeSection === item
+                    ? "bg-gray-800 text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                    }`}
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -370,17 +388,14 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-4 bg-gray-800/50">
-        <div className="max-w-6xl mx-auto">
-          <div
-            className={`transition-all duration-1000 transform ${isVisible.projects ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-          >
+      <main>
+        <section id="projects" className="py-20 px-4 bg-gray-800/50">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Projects
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <div
                   key={index}
@@ -436,8 +451,8 @@ const App = () => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       {/* Internship Section */}
       <section id="internship" className="py-20 px-4 bg-gray-900">
